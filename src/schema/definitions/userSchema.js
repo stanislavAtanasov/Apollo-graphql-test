@@ -6,7 +6,7 @@ const user = `
  }`;
 
 const userQueries = `
- fetchUser(id: ID!): user ,
+ fetchUserByName(name: String!): user ,
 `;
 
 module.exports = {

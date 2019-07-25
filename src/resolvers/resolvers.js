@@ -2,7 +2,7 @@ const userResolvers = require('./defenitions/userResolvers');
 
 const resolvers = {
     Query: {
-        fetchUser: userResolvers.fetchUser,
+        fetchUserByName: userResolvers.fetchUserByName,
     },
 };
 

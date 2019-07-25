@@ -1,11 +1,16 @@
 {
   "name": "appolo-graphql-test",
   "scripts": {
-    "start-dev-server": "node src/server.js"
+    "start-dev-server": "nodemon src/server.js"
   },
   "dependencies": {
     "@apollo/federation": "latest",
     "apollo-server": "latest",
-    "graphql": "latest"
+    "graphql": "latest",
+    "bower": "latest"
+  },
+  "devDependencies": {
+    "nedb": "^1.8.0",
+    "nodemon": "latest"
   }
 }
