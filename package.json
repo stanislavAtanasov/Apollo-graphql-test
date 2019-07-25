@@ -1,0 +1,11 @@
+{
+  "name": "appolo-graphql-test",
+  "scripts": {
+    "start-dev-server": "node src/server.js"
+  },
+  "dependencies": {
+    "@apollo/federation": "latest",
+    "apollo-server": "latest",
+    "graphql": "latest"
+  }
+}
