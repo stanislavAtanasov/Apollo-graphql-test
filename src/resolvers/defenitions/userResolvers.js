@@ -1,21 +1,11 @@
-fetchUser = (_source, _args, {dataSources}) => {
-
-    return users[0];
+fetchUserByName = (_source, {name}, {dataSources}) => {
+    return dataSources.Repository.fetchUserByName(name);
+};
+saveUser = (_source, {user}, {dataSources}) => {
+    return dataSources.Repository.saveUser(user);
 };
 
 module.exports = {
-    fetchUser,
+    fetchUserByName,
+    saveUser
 };
-
-const users = [
-    {
-        id: "1",
-        name: "Adam Ondra",
-        username: "@ada"
-    },
-    {
-        id: "2",
-        name: "Sharma ",
-        username: "@sharma"
-    }
-];
